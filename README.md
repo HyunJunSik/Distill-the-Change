@@ -5,6 +5,8 @@ ALTER matches teacher and student representation responses to image transformati
 including individual representation changes and relative relational changes.
 It adds training supervision without adding student inference modules.
 
+![Overview of ALTER: transformation-response matching and competence-guided curriculum](assets/overview.png)
+
 ## Note
 
 - This release focuses on the CIFAR-100 CNN experiments. Supported distillers are
