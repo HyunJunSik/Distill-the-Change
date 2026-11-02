@@ -1,0 +1,5 @@
+# Install the matching CUDA build of torch/torchvision for your system.
+torch==2.5.1
+torchvision==0.20.1
+numpy>=1.24,<3
+Pillow>=9.5,<12

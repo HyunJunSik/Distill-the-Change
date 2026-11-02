@@ -1,0 +1,119 @@
+{
+  "release_date": "2026-11-02",
+  "purpose": "Input-source snapshot identities for public reorganization; not output verification",
+  "results": "Author-supplied manuscript table; see RESULTS_PROVENANCE.md",
+  "inputs": [
+    {
+      "input_source": "baseline_tuning/vendor/Distiller/ALTER2.py",
+      "input_sha256": "7d11cf79386a19b7a79656cb90f8bf9642fe025e8f56390bd4667ea88cbbef0a"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/Distiller/DKD.py",
+      "input_sha256": "b941c5f60f7384791acc083f023b3592ac0f464e2b478c9ea64e735ec5c678f4"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/Distiller/RKD.py",
+      "input_sha256": "76a7144940b337c7402151ab51869f505f98fe60916b34e71c61026be97238f7"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/Distiller/MLKD.py",
+      "input_sha256": "36c918f43f667d9f33e010683077b129faf3947fc683b0f72aa214fa66c45481"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/Distiller/_common.py",
+      "input_sha256": "b4229714454bb0aeb853d4dd7fcfd51d5aec36e4567cfda63d7c81d061f21b2c"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/Distiller/distiller.py",
+      "input_sha256": "f0fd87bdd7629a4e385c9b93d5cdf2a6f55142951e713ec244283d6af9f90de4"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/utils/causal_data.py",
+      "input_sha256": "3a144ebeb6a7b9da5f0746a0c50b6064de284e7ca4c7cad6770d6605573ced4e"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/utils/train.py",
+      "input_sha256": "41d8897e6a79998376bf964bffde86e0a0cb3f38e71c3d0289c5656eba0c5db7"
+    },
+    {
+      "input_source": "Distiller/ReviewKD.py",
+      "input_sha256": "56a200649d73562c55fd0a9a8079ee7c5a1b7c71f841801e969f986edd38f27a"
+    },
+    {
+      "input_source": "Distiller/SKD.py",
+      "input_sha256": "2771306a26b4f64cd3eda19c5e564ddd7cd7311bfc1ceff9cffcb25f42f364ab"
+    },
+    {
+      "input_source": "Distiller/InDistill.py",
+      "input_sha256": "cb881aa3db0bd7615c1edffb8a19c4862ce3eb951b9901c621efb09968583645"
+    },
+    {
+      "input_source": "Distiller/_review_core.py",
+      "input_sha256": "47935d34cbd39aac028d0d457c6fbc784873f09a92b1e3f62b557b731ff5c9e1"
+    },
+    {
+      "input_source": "Distiller/_skd_core.py",
+      "input_sha256": "e501e091ddb1ad7a7d7cb0d651f4c66acc7013aefe5e1c74604ee549f36acb8a"
+    },
+    {
+      "input_source": "Distiller/_indistill_core.py",
+      "input_sha256": "3376841264477e7fb3fdd67bcda9460280ce3803486f600fbfc641925cace029"
+    },
+    {
+      "input_source": "Distiller/_added_common.py",
+      "input_sha256": "4f66082ecaeea36f4b5bdc8e899fbaec1db37947676b93f8c91b49ba62298192"
+    },
+    {
+      "input_source": "Distiller/_added_features.py",
+      "input_sha256": "e58b0312120e9a6662c95dd1e52b519d84905356ecdf13a30568c9fe14a2d7ad"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/models/resnet.py",
+      "input_sha256": "3c9fce582ae0ad2c035ec1880408b7f4a4297773182a03a443ffc400a2ed249d"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/models/resnet2.py",
+      "input_sha256": "0821297d15b10fb9ce4ab732cb4031c9ed82b05fbc039934877b8d27c065cbdc"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/models/mobilenetv1.py",
+      "input_sha256": "25e3c842b77b247131928faf350ec9962cdbd646f9f9d1dd71906bc259b2976f"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/models/wrn.py",
+      "input_sha256": "9aa2d7164c875fb08859ed1495db85256641863985be50d85ab574c502f8dd3a"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/models/vgg.py",
+      "input_sha256": "1da0296504c8946d5688f81452d408dd15a520860a138ef6894197100ff0e889"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/models/shufflenet_v1.py",
+      "input_sha256": "dd9b1245fc5feb870eb1e246af24aa51dee217f9c1e89f60223f29fa0e348af7"
+    },
+    {
+      "input_source": "baseline_tuning/vendor/models/shufflenet_v2.py",
+      "input_sha256": "767441580aef2e2c3bfc162e4fd541e07dca873eddacfbf5045952a60e6571bc"
+    },
+    {
+      "input_source": "ImageNet/models/resnet_imgnet.py",
+      "input_sha256": "8d7618ab3f84a3896c8d01386d9ddb6ad1af5cfb559448a70cc70861e0d01f91"
+    },
+    {
+      "input_source": "ImageNet/models/mobilenetv1.py",
+      "input_sha256": "8d65397d75591b33585027bc3173850beae8bd2a5c14a85f3eca818269c3e770"
+    },
+    {
+      "input_source": "cnn_pair_extension/config.json",
+      "input_sha256": "514e6c70a521655e775f4a5b11bf80c413fbef1395a45ebacad405ebae63e65d"
+    },
+    {
+      "input_source": "objective_matrix/config.json",
+      "input_sha256": "d421bae0cfc5e940c7ee34c96ab788e744788090b39b2245c7de5df605df1dd0"
+    },
+    {
+      "input_source": "distiller_additions_11/config.json",
+      "input_sha256": "8141b6a0383c277aa6148ac96d3c0b8c39c3d6b903ff3e3c74a74c4c02f2a9fc"
+    }
+  ]
+}

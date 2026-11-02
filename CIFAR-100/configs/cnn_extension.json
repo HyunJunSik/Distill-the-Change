@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "selection_policy": "Prespecified transfer from earlier tuning and MLKD stability repair; no new tuning",
+  "seed": 2021,
+  "epochs": 240,
+  "batch_size": 128,
+  "lr": 0.01,
+  "milestones": [150, 180, 210],
+  "base_augmentation": "concat",
+  "response_weight": 200.0,
+  "weights": {
+    "kd": {"ce": 1.0, "distill": 16.0},
+    "dkd": {"ce": 2.0, "distill": 1.0},
+    "mlkd_align_3": {"ce": 0.5, "distill": 8.0},
+    "rkd": {"ce": 1.0, "distill": 0.25},
+    "fitnet": {"ce": 2.0, "distill": 100.0}
+  },
+  "pairs": {
+    "resnet56_to_resnet20": {"teacher": "resnet56", "student": "resnet20", "setting": "homogeneous"},
+    "resnet110_to_resnet32": {"teacher": "resnet110", "student": "resnet32", "setting": "homogeneous"},
+    "wrn_40_2_to_wrn_40_1": {"teacher": "wrn_40_2", "student": "wrn_40_1", "setting": "homogeneous"},
+    "vgg13_to_mobilenetv1": {
+      "teacher": "vgg13", "student": "mobilenetv1", "setting": "heterogeneous",
+      "weights": {"mlkd_align_3": {"ce": 0.5, "distill": 0.5}}
+    },
+    "ResNet50_to_mobilenetv1": {
+      "teacher": "ResNet50", "student": "mobilenetv1", "setting": "heterogeneous",
+      "weights": {"mlkd_align_3": {"ce": 0.5, "distill": 0.5}}
+    },
+    "resnet32x4_to_ShuffleV2": {
+      "teacher": "resnet32x4", "student": "ShuffleV2", "setting": "heterogeneous",
+      "weights": {"mlkd_align_3": {"ce": 0.5, "distill": 0.5}}
+    }
+  }
+}
