@@ -106,19 +106,6 @@ All eight methods across the eleven CIFAR-100 pairs (176 student conditions):
 python CIFAR-100/Utils/Distillation_train.py --data-root ./data --checkpoint-dir ./checkpoints --all-pairs --methods KD RKD ReviewKD InDistill DKD MLKD SKD FitNet --compare
 ```
 
-Heterogeneous InDistill additionally prepares one 2x-width student-topology
-auxiliary teacher per pair, shared by its baseline and ALTER conditions. These
-five preparation runs are additional to the 176 student conditions. Preparation
-artifacts are reused when the protocol matches. Both student conditions use the
-same intermediate-only warmup; ALTER begins afterward (21 epochs, or 30 for VGG).
-
-Weight presets and method adaptations are described in [implementation notes](docs/IMPLEMENTATION.md).
-Use `--ce-weight`, `--distill-weight`, `--response-weight`, `--lr`, `--batch-size`,
-`--epochs`, `--workers`, and `--output-root` for explicit overrides. They are recorded
-with each run. Repeat an interrupted command to resume from the last complete
-epoch; complete runs are skipped. Changes to source or protocol require a new output root.
-Use separate output roots for concurrent processes; a run directory has one writer.
-
 ### ImageNet
 
 Prepare `data/imagenet/train/<class>/` and `data/imagenet/val/<class>/` (or `valid/`).
@@ -128,12 +115,6 @@ ImageNet files retain the original ResNet/MobileNet architecture and parameter k
 python ImageNet/Utils/baseline_train.py --data-root ./data/imagenet --model resnet18
 python ImageNet/Utils/distillation_train.py --data-root ./data/imagenet --teacher resnet34 --student resnet18 --method KD --compare --teacher-checkpoint ./checkpoints/resnet34.pth
 ```
-
-ImageNet entry points provide a single-GPU reference configuration: 224-pixel
-input, 100 epochs, batch 256, LR .1, milestones 30/60/90. They are not presented
-as the complete historical Gaudi/distributed/ImageNet experiment pipeline.
-This release's InDistill stage-port is CIFAR-100-specific and is not enabled for ImageNet.
-No ImageNet results are claimed in this README.
 
 ## Test
 
