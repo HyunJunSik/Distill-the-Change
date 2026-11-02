@@ -155,8 +155,6 @@ manuscript table supplied for this release; their provenance is documented separ
 
 ## Acknowledgement
 
-The repository layout follows [Streamlined Knowledge Distillation](https://github.com/HyunJunSik/StreamLined).
+The repository layout follows MDistiller.
 Model and objective implementations build on the project snapshots of MDistiller,
-ReviewKD, SKD and InDistill. See [source attribution](docs/THIRD_PARTY.md), included
-third-party license files and source-level notices. Adaptations are explicitly
-documented rather than described as complete upstream reproductions.
+ReviewKD, SKD and InDistill.
